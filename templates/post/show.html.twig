@@ -1,0 +1,12 @@
+{% extends('base.html.twig') %}
+{% block body %}
+
+    <h1>The post no.{{ post.id }} has the title {{ post.title }}</h1>
+    <div align = "center" width = 50%>
+        <em>This post belongs to the category = {{ post.category }}</em>
+        <img src="{{ '/uploads/'~ post.image }}" alt="" style="
+    width: 800px;
+    height: 200px;
+">
+    </div>
+{% endblock %}
